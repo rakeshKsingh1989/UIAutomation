@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using UITestAutomation.Steps;
 using UITestAutomation.Tests;
 
 namespace UITestAutomation.Pages
@@ -12,7 +13,7 @@ namespace UITestAutomation.Pages
 
         public CartPage()
         {
-            driver = _webdriver;
+            driver = Hooks1._webdriver;
 
         }
 

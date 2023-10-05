@@ -2,6 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
+using UITestAutomation.Steps;
 using UITestAutomation.Tests;
 
 namespace UITestAutomation.Pages
@@ -13,9 +14,9 @@ namespace UITestAutomation.Pages
 
 		public CheckOutPage()
 		{
-			driver = _webdriver;
+            driver = Hooks1._webdriver;
 
-		}
+        }
 
 		private IWebElement FirstName => driver.FindElement(By.Id("first-name"));
 		private IWebElement LastName => driver.FindElement(By.Id("last-name"));

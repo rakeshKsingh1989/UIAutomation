@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
+using UITestAutomation.Steps;
 using UITestAutomation.Tests;
 
 namespace UITestAutomation.Pages
@@ -12,7 +13,7 @@ namespace UITestAutomation.Pages
 
         public LoginPage()
         {
-            driver = _webdriver;
+            driver = Hooks1._webdriver;
 
         }
 
